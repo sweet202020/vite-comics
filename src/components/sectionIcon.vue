@@ -56,6 +56,8 @@ export default {
     background-color: blue;
     color: white;
     padding: 0 13rem;
+    position: relative;
+    z-index: 100;
 }
 
 .my_card {

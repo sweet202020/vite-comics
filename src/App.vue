@@ -2,12 +2,14 @@
 import siteHeader from "./components/siteHeader.vue";
 import sectionContent from "./components/sectionContent.vue";
 import sectionIcon from "./components/sectionIcon.vue";
+import sectionJumbo from "./components/sectionJumbo.vue";
 export default {
   name: 'App',
   components: {
     siteHeader,
     sectionContent,
     sectionIcon,
+    sectionJumbo,
   }
 }
 
@@ -21,8 +23,8 @@ export default {
     <sectionContent />
 
     <sectionIcon />
-    <section class="jumbo"></section>
-    <!-- /.jumbo -->
+
+    <sectionJumbo />
   </main>
   <!-- /#site_main -->
   <footer id="site_footer"></footer>
