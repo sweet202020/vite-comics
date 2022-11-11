@@ -78,6 +78,8 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables.scss' as*;
 
+
+
 .logo {
     margin-top: 0.5rem;
 
@@ -99,6 +101,11 @@ nav {
         margin-top: 1rem;
         font-weight: 600;
 
+        &:hover {
+            border-bottom: 4px solid $primary;
+            color: $primary;
+            padding-bottom: 1rem;
+        }
     }
 
     .active {

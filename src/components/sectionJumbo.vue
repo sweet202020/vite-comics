@@ -114,7 +114,7 @@ export default {
         background-image: url(../assets/img/dc-logo-bg.png);
         background-size: 600px;
         width: 800px;
-        aspect-ratio: 1/1;
+        padding: 20rem;
         background-repeat: no-repeat;
         right: 0;
         position: absolute;
