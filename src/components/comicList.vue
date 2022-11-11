@@ -1,7 +1,11 @@
 <script>
 import dcComics from "../data/dcComics.js";
+import comicItem from "./comicItem.vue";
 export default {
     name: 'comicList',
+    components: {
+        comicItem
+    },
     data() {
         return {
             comics: dcComics
@@ -15,11 +19,7 @@ export default {
 
     <div class="container">
         <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6">
-            <div class="col" v-for="comic in comics">
-                <img :src="comic.thumb" alt="">
-                <p>{{ comic.series }}</p>
-            </div>
-
+            <comicItem v-for="comic in comics" :thumb="comic.thumb" :title="comic.series" />
         </div>
     </div>
 
