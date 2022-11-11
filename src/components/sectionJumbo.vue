@@ -1,75 +1,75 @@
 <script>
 export default {
     name: 'sectionJumbo',
-    data() {
-        return {
-            list: [
-                {
-                    title: 'dc comics',
-                    link: [
-                        'characters',
-                        'comics',
-                        'movies',
-                        'tv',
-                        'games',
-                        'videos',
-                        'news'
-                    ]
-                },
-                {
-                    title: 'dc shop',
-                    link: [
-                        'shop dc',
-                        'shop dc collectibles',
-                    ]
-                },
-                {
-                    title: 'dc',
-                    link: [
-                        'term of use',
-                        'privacy policy(new)',
-                        'ad choice',
-                        'advertising',
-                        'jobs',
-                        'subscriptions',
-                        'talent workshops',
-                        'cpsc certificates',
-                        'ratings',
-                        'shop helps',
-                        'contact us'
 
-                    ]
-                },
-                {
-                    title: 'sites',
-                    link: [
-                        'dc',
-                        'mad magazine',
-                        'dc kids',
-                        'dc universe',
-                        'dc power visa'
-                    ]
-                },
-            ]
-        }
-    }
+
 }
 </script>
 
 <template>
     <section class="jumbo">
-        <ul v-for="item in list">
-            <li>
-                <h3 class="text-white text-uppercase mt-5">{{ item.title }}</h3>
+        <div class="container">
+            <div class="d-flex">
+
                 <ul>
-                    <li class="text-white" v-for="singleEl in item.link">
-                        <a href="">
-                            {{ singleEl }}
-                        </a>
+                    <li>
+                        <h3 class="text-white text-uppercase mt-5">dc comics</h3>
+                        <ul>
+                            <li class="text-white"><a href="">Characters</a></li>
+                            <li class="text-white"><a href="">Comics</a></li>
+                            <li class="text-white"><a href="">Movies</a></li>
+                            <li class="text-white"><a href="">TV</a></li>
+                            <li class="text-white"><a href="">Games</a></li>
+                            <li class="text-white"><a href="">Videos</a></li>
+                            <li class="text-white"><a href="">News</a></li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <h3 class="text-white text-uppercase mt-5">shop</h3>
+                                        <ul>
+                                            <li class="text-white"><a href="">Shop DC</a></li>
+                                            <li class="text-white"><a href="">Shop DC Collectibles</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-            </li>
-        </ul>
+                <ul>
+                    <li>
+                        <h3 class="text-white text-uppercase mt-5">dc</h3>
+                        <ul>
+                            <li class="text-white"><a href="">Term of Use</a></li>
+                            <li class="text-white"><a href="">Privacy Policy (new)</a></li>
+                            <li class="text-white"><a href="">Ad choice</a></li>
+                            <li class="text-white"><a href="">Advertising</a></li>
+                            <li class="text-white"><a href="">Jobs</a></li>
+                            <li class="text-white"><a href="">Subscriptions</a></li>
+                            <li class="text-white"><a href="">Talent Workshops</a></li>
+                            <li class="text-white"><a href="">CPSCS Certificates</a></li>
+                            <li class="text-white"><a href="">Ratings</a></li>
+                            <li class="text-white"><a href="">Shop help</a></li>
+                            <li class="text-white"><a href="">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 class="text-white text-uppercase mt-5">sites</h3>
+                        <ul>
+                            <li class="text-white"><a href="">DC</a></li>
+                            <li class="text-white"><a href="">MAD Magazine</a></li>
+                            <li class="text-white"><a href="">DC kids</a></li>
+                            <li class="text-white"><a href="">DC Universe</a></li>
+                            <li class="text-white"><a href="">DC Power Visa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
         <div class="dc_logo">
 
         </div>
@@ -79,31 +79,34 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables.scss' as*;
+
 .jumbo {
     background-image: url(../assets/img/footer-bg.jpg);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
 
-
-
-    /* display: flex;
-    height: 500px; */
-    /* flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start; */
-    height: 500px;
-
-    /* 
     ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    } */
+        list-style: none;
+        padding-left: 0;
+        margin-right: 1rem;
+        padding-bottom: 1rem;
 
+        h3 {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+            font-weight: 600;
+        }
+    }
 
 
 
@@ -113,7 +116,7 @@ export default {
         width: 800px;
         aspect-ratio: 1/1;
         background-repeat: no-repeat;
-        margin-left: 40rem;
+        margin-left: 60rem;
         position: absolute;
         top: -80px
     }

@@ -17,7 +17,6 @@ h3 {
     background-color: black;
     color: white;
     padding: 3rem 0;
-    margin-top: 1rem;
     margin-bottom: 0;
 }
 </style>

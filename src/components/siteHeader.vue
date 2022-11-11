@@ -59,7 +59,7 @@ export default {
 <template>
     <header id="site_header">
         <div class="container">
-            <div class="d-flex justify-content-around">
+            <div class="d-flex justify-content-between">
                 <div class="logo">
                     <img src="../assets/img/dc-logo.png" alt="">
                 </div>
@@ -76,6 +76,8 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables.scss' as*;
+
 .logo {
     margin-top: 0.5rem;
 
@@ -90,15 +92,19 @@ nav {
 
     a {
         text-decoration: none;
-        color: black;
-        padding: 1rem;
+        color: $primary-dark;
+        padding-top: 0.7rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
         margin-top: 1rem;
+        font-weight: 600;
 
     }
 
     .active {
-        text-decoration: underline;
-        color: blue;
+        border-bottom: 4px solid $primary;
+        color: $primary;
+        padding-bottom: 1rem;
     }
 }
 </style>

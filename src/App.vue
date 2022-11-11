@@ -3,6 +3,7 @@ import siteHeader from "./components/siteHeader.vue";
 import sectionContent from "./components/sectionContent.vue";
 import sectionIcon from "./components/sectionIcon.vue";
 import sectionJumbo from "./components/sectionJumbo.vue";
+import Footer from "./components/Footer.vue";
 export default {
   name: 'App',
   components: {
@@ -10,6 +11,7 @@ export default {
     sectionContent,
     sectionIcon,
     sectionJumbo,
+    Footer,
   }
 }
 
@@ -27,7 +29,7 @@ export default {
     <sectionJumbo />
   </main>
   <!-- /#site_main -->
-  <footer id="site_footer"></footer>
+  <Footer />
   <!-- /#site_footer -->
 
 </template>
