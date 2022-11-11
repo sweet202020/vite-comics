@@ -1,22 +1,34 @@
+
 <script>
+import comicList from "./comicList.vue";
 export default {
-    name: 'sectionContent'
+    name: 'sectionContent',
+    components: {
+        comicList,
+    }
 }
 </script>
 
 
 <template>
+    <section class="jumbo">
+        <!-- <img src="../assets/img/jumbotron.jpg" alt=""> -->
+    </section>
     <section class="content">
-        <h3 class="text-center">-->Content goes here</h3>
+        <comicList />
     </section>
     <!-- /.content -->
 </template>
 
 <style lang="scss" scoped>
-h3 {
-    background-color: black;
-    color: white;
-    padding: 3rem 0;
-    margin-bottom: 0;
+/* img {
+    max-width: 100%;
+    width: 100%;
+} */
+.jumbo {
+    background-image: url('../assets/img/jumbotron.jpg');
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 </style>

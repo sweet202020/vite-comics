@@ -116,7 +116,7 @@ export default {
         width: 800px;
         aspect-ratio: 1/1;
         background-repeat: no-repeat;
-        margin-left: 60rem;
+        right: 0;
         position: absolute;
         top: -80px
     }

@@ -1,17 +1,19 @@
 <script>
 import siteHeader from "./components/siteHeader.vue";
+import comicList from "./components/comicList.vue";
 import sectionContent from "./components/sectionContent.vue";
 import sectionIcon from "./components/sectionIcon.vue";
 import sectionJumbo from "./components/sectionJumbo.vue";
-import Footer from "./components/Footer.vue";
+import FooterItem from "./components/FooterItem.vue";
 export default {
   name: 'App',
   components: {
     siteHeader,
     sectionContent,
+    comicList,
     sectionIcon,
     sectionJumbo,
-    Footer,
+    FooterItem,
   }
 }
 
@@ -29,7 +31,7 @@ export default {
     <sectionJumbo />
   </main>
   <!-- /#site_main -->
-  <Footer />
+  <FooterItem />
   <!-- /#site_footer -->
 
 </template>
